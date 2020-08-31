@@ -1,0 +1,34 @@
+#sedropbtn {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    background: #333;
+    border: 0;
+    border-radius: 5px;
+}
+
+#sedropbtn > img {
+    width: 30px;
+    height: 30px;
+    max-width: 30px;
+}
+
+#sedropdownbox {
+    border-radius: 5px;
+    color: rgb(189, 189, 189);
+    display:flex;
+    background-color: #4a4a4a;
+    padding: 5px;
+    top:0;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    visibility: hidden;
+}
+
+
+.sedropdownicon {
+    padding: 3px;
+}

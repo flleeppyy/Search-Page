@@ -1,0 +1,102 @@
+/*Magic font: font-family: 'Montserrat', sans-serif;*/
+
+* {
+    /*border: 1px solid red!important*/
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #444;
+    margin: 0;
+}
+
+#bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #444;
+    filter: blur(0.2vh) brightness(60%);
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(189, 189, 189);
+}
+
+#flextape {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: fixed;
+    flex-direction: column;
+}
+
+.chenicon {
+    border-radius: 100%;
+    border: #3fccf0 5px solid;
+    max-width: 227px;
+    max-height: 227px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+
+.chendescription {
+    color: #eaeaea;
+    -webkit-text-stroke: #333 2px;
+    text-shadow: 0px 0px 8px #000000;
+    paint-order: stroke fill;
+}
+.item {
+    margin: 0 auto;
+    position: relative;
+}
+
+.searchbox {
+    display: flex;
+    max-width: 515px;
+    width: 100%;
+    height: 2.8em;
+    background-color: #333333;
+    opacity: 90%;
+    border-radius: 5px;
+}
+
+.searchicon {
+    float: right;
+    width: 1.3em;
+    animation: ease-in color .3s;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    color: #b9b9b9;
+}
+
+.searchbox>input {
+    font-family: 'Montserrat', sans-serif;
+    background-color: inherit;
+    border: none;
+    display: block;
+    margin-top: 4.2px;
+    margin-left: .6em;
+    width: 96%;
+    color: #d5d5d5;
+    height: 2.545455em;
+}
+
+.searchbox>input:focus {
+    outline: none;
+}
+
+.searchicon:hover {}
+
