@@ -53,7 +53,7 @@ h1, h2 {
 
 .chendescription {
     color: #eaeaea;
-    -webkit-text-stroke: #333 2px;
+    -webkit-text-stroke: #333 5px;
     text-shadow: 0px 0px 8px #000000;
     paint-order: stroke fill;
 }

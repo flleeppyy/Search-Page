@@ -3,16 +3,19 @@
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 2px 0 10px;
     background: #333;
     border: 0;
     border-radius: 5px;
+    color: rgb(207, 207, 207);
+    cursor: pointer
 }
 
 #sedropbtn > img {
     width: 30px;
     height: 30px;
     max-width: 30px;
+    margin-right: 10px;
 }
 
 #sedropdownbox {
@@ -20,15 +23,38 @@
     color: rgb(189, 189, 189);
     display:flex;
     background-color: #4a4a4a;
-    padding: 5px;
     top:0;
     position: absolute;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.48);
+
 }
 
+.seoption {
+    display: flex;
+    /* justify-content: */
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+.seoption > img {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px 0 0;
+}
 
 .sedropdownicon {
-    padding: 3px;
+    
 }
