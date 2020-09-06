@@ -4,6 +4,7 @@ const fs = require("fs")
 const os = require("os")
 const path = require("path")
 const log = require('./modules/logger') // Simple logger. Usage: log.log("thing to log") or log.echo("thing to log that also logs to console")
+const { stdout } = require("process")
 
 
 
@@ -23,6 +24,15 @@ const port = 8000 //listening port
 app.use('/', express.static(__dirname + '/public')) // Static route; DO NOT ADD TRAILING SLASH IN EXPRESS.STATIC
 
 app.get('/favicon.ico', (req, res) => res.sendFile(path.join(__dirname, 'public/favicon.ico'))) // Just for extra measure
+app.post('/search', (req, res) => {
+    if (!req.param.query || !req.param) {
+        return;
+    }
+    console.log(req.params)
+    switch (req.param) {
+        case "ddg":
+    }
+})
 app.get('/', (req, res) => { // The index page   
     try {
         console.info(`IP: ${req.ip} Requested ${req.url}`) // just do some logging
@@ -33,4 +43,4 @@ app.get('/', (req, res) => { // The index page
     }
 });
 
-app.listen(port || 8000, console.log(`Listening on http://localhost:${port}`))
+app.listen(port || 8000, console.log(`Listening on http://localhost:${port}`)) >> stdout
